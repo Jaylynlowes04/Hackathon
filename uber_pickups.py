@@ -15,6 +15,5 @@ question = st.text_input("Enter your Question","")
 if(question):
     #Get answer from OpenAI
     #st.write that answer to the user
-    #Make more personal
     response = chat_model.predict(question)
     st.write(response)
